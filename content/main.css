@@ -11,13 +11,13 @@ body{
   font-family: 'Open sans', sans-serif;
 }
 
-div.content{
+.content{
   position: relative;
   margin: 20px auto;
   width: 90%;
   max-width: 600px;
 }
 
-div.wrap{
+.wrap{
   padding: 6px;
 }

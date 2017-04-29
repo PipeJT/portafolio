@@ -15,7 +15,7 @@ body{
   position: relative;
   margin: 20px auto;
   width: 90%;
-  max-width: 600px;
+  max-width: 500px;
 }
 
 .wrap{
@@ -37,8 +37,39 @@ body{
   padding: 4px;
 }
 
-.form .contact .input-group input[type="text"]{
-  width: 70%;
+.form .contact .inputGroup{
+  width: 60%;
+  position: relative;
+  margin: auto;
+  margin-bottom: 12px
+}
+
+.form .contact .textArea{
+  width: 100%;
+  position: relative;
+  margin: auto;
+  margin-bottom: 12px
+}
+
+.form .contact .inputGroup input[type="text"], .form .contact .inputGroup input[type="email"]{
+  width: 100%;
+  padding: 4px;
+  margin: auto;
+}
+
+.form .contact .inputGroup:nth-last-child(1){
+  text-align: center;
+}
+
+.form .contact .inputGroup input[type="submit"]{
+  width: 40%;
+  position: relative;
+  padding: 4px;
+  margin: auto;
+}
+
+.form .contact .textArea textarea{
+  width: 100%;
   padding: 4px;
   margin: auto;
 }

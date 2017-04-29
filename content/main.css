@@ -9,6 +9,7 @@
 body{
   font-size: 16px;
   font-family: 'Open sans', sans-serif;
+  background: grey;
 }
 
 .content{
@@ -20,6 +21,9 @@ body{
 
 .wrap{
   padding: 10px;
+  background: #fff;
+  -webkit-box-shadow: 0px 0px 3px 0px #fff  ;
+  box-shadow: 0px 0px 3px 0px #fff  ;
 }
 
 .titulo{
@@ -62,19 +66,26 @@ body{
   outline: none;
   background: none;
 
-  border: 2px solid #565656;
+  border: 1px solid #a2a2a2;
 
-  -webkit-transition: all ease-out .2s;
-  -o-transition: all ease-out .2s;
-  transition: all ease-out .2s;
+  -webkit-transition: ease-out .2s;
+  -o-transition: ease-out .2s;
+  transition: ease-out .2s;
+
+  -webkit-box-shadow: 1px 1px 2px 0px rgba(162,162,162,0.5);
+  box-shadow: 1px 1px 2px 0px rgba(162,162,162,0.5);
 }
 
 .form .contact .inputGroup input[type="text"]:hover, .form .contact .inputGroup input[type="email"]:hover, .form .contact .textArea textarea:hover{
-  border: 2px solid #a2a2a2;
+  border: 0.5px solid #a2a2a2;
+  -webkit-box-shadow: 2px 6px 8px 0px rgba(86,86,86,0.5);
+  box-shadow: 2px 6px 8px 0px rgba(86,86,86,0.5);
 }
 
 .form .contact .inputGroup input[type="text"]:focus, .form .contact .inputGroup input[type="email"]:focus, .form .contact .textArea textarea:focus{
-  border: 2px solid #005600;
+  border: 1px solid #005600;
+  -webkit-box-shadow: 1px 3px 6px 0px rgba(0,86,0,0.5);
+  box-shadow: 1px 3px 6px 0px rgba(0,86,0,0.5);
 }
 
 .form .contact .inputGroup:nth-last-child(1){

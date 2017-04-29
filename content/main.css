@@ -9,7 +9,7 @@
 body{
   font-size: 16px;
   font-family: 'Open sans', sans-serif;
-  background: grey;
+  background: #af0237;
 }
 
 .content{
@@ -61,31 +61,33 @@ body{
   margin: auto;
 }
 
-.form .contact .inputGroup input[type="text"], .form .contact .inputGroup input[type="email"], .form .contact .textArea textarea{
+.style1{
   border: none;
   outline: none;
   background: none;
 
   border: 1px solid #a2a2a2;
 
-  -webkit-transition: ease-out .2s;
-  -o-transition: ease-out .2s;
-  transition: ease-out .2s;
-
   -webkit-box-shadow: 1px 1px 2px 0px rgba(162,162,162,0.5);
   box-shadow: 1px 1px 2px 0px rgba(162,162,162,0.5);
 }
 
-.form .contact .inputGroup input[type="text"]:hover, .form .contact .inputGroup input[type="email"]:hover, .form .contact .textArea textarea:hover{
+.style1:hover{
   border: 0.5px solid #a2a2a2;
   -webkit-box-shadow: 2px 6px 8px 0px rgba(86,86,86,0.5);
   box-shadow: 2px 6px 8px 0px rgba(86,86,86,0.5);
 }
 
-.form .contact .inputGroup input[type="text"]:focus, .form .contact .inputGroup input[type="email"]:focus, .form .contact .textArea textarea:focus{
+.style1:focus{
   border: 1px solid #005600;
   -webkit-box-shadow: 1px 3px 6px 0px rgba(0,86,0,0.5);
   box-shadow: 1px 3px 6px 0px rgba(0,86,0,0.5);
+}
+
+.anim{
+  -webkit-transition: ease .3s;
+  -o-transition: ease .3s;
+  transition: ease .3s;
 }
 
 .form .contact .inputGroup:nth-last-child(1){
@@ -109,10 +111,6 @@ body{
   font-weight: 600;
 
   cursor: pointer;
-
-  -webkit-transition: all ease-in .3s;
-  -o-transition: all ease-in .3s;
-  transition: all ease-in .3s;
 }
 
 .form .contact .inputGroup input[type="submit"]:hover{

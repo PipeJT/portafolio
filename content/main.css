@@ -1,3 +1,5 @@
+/*General styles*/
+
 *{
   margin: 0px;
   padding: 0px;
@@ -16,49 +18,89 @@ body{
   position: relative;
   margin: 20px auto;
   width: 90%;
-  max-width: 500px;
+  max-width: 700px;
 }
 
 .wrap{
-  padding: 10px;
+  padding: 20px;
   background: #fff;
   -webkit-box-shadow: 0px 0px 3px 0px #fff  ;
   box-shadow: 0px 0px 3px 0px #fff  ;
 }
+/*End general style*/
 
-.titulo{
-  text-align: center;
-  margin-bottom: 16px;
+/*Information Style*/
+.info{
+  width: 100%;
+  display: flex;
+
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
+.photo{
+  position: relative;
+  width: 30%;
+  text-align: center;
+}
+
+.photo img{
+  width: 60%;
+  height: auto;
+
+  border-radius: 50%;
+  -webkit-box-shadow: 1px 3px 10px 0px #565656;
+  box-shadow: 1px 3px 10px 0px #565656;
+  -webkit-transition: all ease .3s;
+  -o-transition: all ease .3s;
+  transition: all ease .3s;
+}
+
+.photo img:hover{
+  width: 70%;
+  -webkit-box-shadow: 2px 6px 10px 0px #565656;
+  box-shadow: 2px 6px 10px 0px #565656;
+}
+
+.desc{
+  width: 70%;
+  font-size: 12px;
+  position: relative;
+  margin-bottom: 20px
+}
+
+.desc ul li{
+  text-indent: 0em;
+  list-style-position: inside;
+}
+
+.desc ul li ul li{
+  text-indent: 2em;
+  list-style-position: inside;
+}
+
+/*End information style*/
+
+/*Contact style*/
 .form{
   width: 90%;
   margin: auto;
+  max-width: 500px;
 }
 
-.form .contact{
+.contact{
   width: 100%;
   padding: 4px;
+  display: flex;
+
+  justify-content: space-between;
+  flex-wrap: wrap
 }
 
-.form .contact .inputGroup{
-  width: 60%;
-  position: relative;
-  margin: auto;
-  margin-bottom: 12px
-}
-
-.form .contact .textArea{
+.titulo{
+  text-align: center;
   width: 100%;
-  position: relative;
-  margin: auto;
-  margin-bottom: 12px
-}
-
-.form .contact .inputGroup input[type="text"], .form .contact .inputGroup input[type="email"]{
-  width: 100%;
-  padding: 4px;
-  margin: auto;
+  margin-bottom: 16px;
 }
 
 .style1{
@@ -66,35 +108,57 @@ body{
   outline: none;
   background: none;
 
-  border: 1px solid #a2a2a2;
+  color: #6c6c6c;
+
+  border-bottom : 1px solid #a2a2a2;
+  border-right: 1px solid #a2a2a2;
 
   -webkit-box-shadow: 1px 1px 2px 0px rgba(162,162,162,0.5);
   box-shadow: 1px 1px 2px 0px rgba(162,162,162,0.5);
 }
 
 .style1:hover{
-  border: 0.5px solid #a2a2a2;
+  color: #a2a2a2;
+  border-bottom : 1px solid #a2a2a2;
+  border-right: 1px solid #a2a2a2;
   -webkit-box-shadow: 2px 6px 8px 0px rgba(86,86,86,0.5);
   box-shadow: 2px 6px 8px 0px rgba(86,86,86,0.5);
 }
 
 .style1:focus{
-  border: 1px solid #005600;
+  color: #005600;
+  border-bottom : 1px solid #005600;
+  border-right: 1px solid #005600;
   -webkit-box-shadow: 1px 3px 6px 0px rgba(0,86,0,0.5);
   box-shadow: 1px 3px 6px 0px rgba(0,86,0,0.5);
 }
 
-.anim{
-  -webkit-transition: ease .3s;
-  -o-transition: ease .3s;
-  transition: ease .3s;
+.inputGroup{
+  width: 45%;
+  position: relative;
+  margin: auto;
+  margin-bottom: 12px;
+  font-size: 12px;
 }
 
-.form .contact .inputGroup:nth-last-child(1){
+.textArea{
+  width: 95%;
+  position: relative;
+  margin: auto;
+  margin-bottom: 12px
+}
+
+.inputGroup input[type="text"], .inputGroup input[type="email"]{
+  width: 100%;
+  padding: 10px;
+  margin: auto;
+}
+
+.inputGroup:nth-last-child(1){
   text-align: center;
 }
 
-.form .contact .inputGroup input[type="submit"]{
+.inputGroup input[type="submit"]{
  /*Tamaños y posiciones*/
   width: 40%;
   position: relative;
@@ -113,25 +177,31 @@ body{
   cursor: pointer;
 }
 
-.form .contact .inputGroup input[type="submit"]:hover{
+.inputGroup input[type="submit"]:hover{
   background: #000;
   color: #f3f3f3;
 }
 
-.form .contact .inputGroup input[type="submit"]:disabled{
+.inputGroup input[type="submit"]:disabled{
   background: #575757;
   color: #f3f3f3;
   cursor: default;
 }
 
-.form .contact .textArea textarea{
+.textArea textarea{
   width: 100%;
-  padding: 4px;
+  padding: 10px;
   margin: auto;
 }
 
-.form .contact .textArea .label, .form .contact .inputGroup .label{
+.label{
   font-size: 12px;
   color: grey;
   font-weight: 600;
+}
+
+.anim{
+  -webkit-transition: ease .3s;
+  -o-transition: ease .3s;
+  transition: ease .3s;
 }

@@ -205,3 +205,24 @@ body{
   -o-transition: ease .3s;
   transition: ease .3s;
 }
+
+@media screen and (max-width: 720px) {
+  .photo{
+    width: 100%;
+  }
+
+  .photo img{
+    width: 20%
+  }
+  .photo img:hover{
+    width: 22%
+  }
+
+  .desc{
+    width: 100%;
+  }
+
+  .inputGroup{
+    width: 95%;
+  }
+}

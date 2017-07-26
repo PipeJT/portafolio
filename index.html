@@ -6,47 +6,77 @@
     <title>Portafolio</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="content/main.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
   </head>
   <body>
-    <div class="content">
+    <section class="content">
       <div class="wrap">
         <div class="info">
           <div class="photo">
-            <img src="content/img/prueba.png" alt="">
+            <img src="content/img/prueba.png">
           </div>
           <div class="desc">
-            <h2>Prueba</h2>
+            <h1>Felipe Jiménez Torres</h1>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              Estudiante de analista programador. <br />
+              Conocimientos en:
             </p>
-          </div>
-        </div>
-        <div class="contact">
-          <div class="titulo">
-            <h3>Contacto</h3>
-          </div>
-          <div class="form">
-            <form action="" class="contact">
-              <div class="inputGroup">
-                <label for="email" class="label email">Ingresa tu email.</label>
-                <input type="email" id="email" class="style1 anim" placeholder="example@gmail.com">
-              </div>
-              <div class="inputGroup">
-                <label for="asn" class="label asunto">Ingresa el asunto.</label>
-                <input type="text" id="asn" class="style1 anim" placeholder="Asunto">
-              </div>
-              <div class="textArea">
-                <label for="cont" class="label text">Escribe el mensaje.</label>
-                <textarea id="cont" class="style1 anim" placeholder="Contenido"></textarea>
-              </div>
-              <div class="inputGroup">
-                <input type="submit" id="send" class="input btn anim" value="Enviar" disabled><br />
-                <label for="send" class="label send">Aún es muy pronto para contactarme.</label>
-              </div>
-            </form>
+            <ul>
+              <li>HTML, CSS y JavaScript</li>
+              <li>C# y ASP.Net</li>
+              <li>¿Quieres conocer más? <a href="#" id="disContact" class="lnkShow">Contáctame</a></li>
+            </ul>
           </div>
         </div>
       </div>
+    </section>
+    <div class="hide displayContact" id="contacto">
+      <div class="contact">
+        <div class="titulo">
+          <h3>Contacto</h3>
+        </div>
+        <div class="form">
+          <form action="" class="">
+            <div class="inputGroup">
+              <label for="email" class="label email">Ingresa tu email.</label>
+              <input type="email" id="email" class="style1 anim" placeholder="example@gmail.com">
+            </div>
+            <div class="inputGroup">
+              <label for="asn" class="label asunto">Ingresa el asunto.</label>
+              <input type="text" id="asn" class="style1 anim" placeholder="Asunto">
+            </div>
+            <div class="textArea">
+              <label for="cont" class="label text">Escribe el mensaje.</label>
+              <textarea id="cont" class="style1 anim" placeholder="Contenido"></textarea>
+            </div>
+            <div class="inputGroup">
+              <input type="submit" id="send" class="input btn anim" value="Enviar" disabled><br />
+              <label for="send" class="label send">Aún es muy pronto para contactarme.</label>
+            </div>
+          </form>
+        </div>
+      </div>
     </div>
+    <footer>
+      <p>
+        Photo made by
+        <a href="https://www.instagram.com/pipexs_jt/" target="_blank">
+          <img src="content/img/instagram.png" height="18px"/>
+          pipexs_jt
+        </a>
+      </p>
+    </footer>
+    <script>
+      $(document).ready(function() {
+        $("#disContact").click(function(){
+          $("#contacto").slideToggle();
+        });
+        $(this).keydown(function(event) {
+          if(event.keyCode == 27){
+            $("#contacto").slideToggle();
+          };
+        });
+      });
+    </script>
   </body>
 </html>

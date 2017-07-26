@@ -11,21 +11,39 @@
 body{
   font-size: 16px;
   font-family: 'Open sans', sans-serif;
-  background: #af0237;
+  font-weight: 600 !important;
+
+  background-image: url("img/bkg1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+footer{
+  position: fixed;
+  bottom: 0px;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  padding: 4px;
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.7);
+  box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.7);
 }
 
 .content{
   position: relative;
-  margin: 20px auto;
+  margin: 60px auto;
   width: 90%;
   max-width: 700px;
 }
 
 .wrap{
   padding: 20px;
-  background: #fff;
-  -webkit-box-shadow: 0px 0px 3px 0px #fff  ;
-  box-shadow: 0px 0px 3px 0px #fff  ;
+  background: rgba(255,255,255,0.7);
+  -webkit-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.7);
+  box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.7);
 }
 /*End general style*/
 
@@ -48,7 +66,7 @@ body{
   width: 60%;
   height: auto;
 
-  border-radius: 50%;
+  border-radius: 20%;
   -webkit-box-shadow: 1px 3px 10px 0px #565656;
   box-shadow: 1px 3px 10px 0px #565656;
   -webkit-transition: all ease .3s;
@@ -58,30 +76,56 @@ body{
 
 .photo img:hover{
   width: 70%;
+  border-radius: 10%;
   -webkit-box-shadow: 2px 6px 10px 0px #565656;
   box-shadow: 2px 6px 10px 0px #565656;
 }
 
 .desc{
   width: 70%;
-  font-size: 12px;
   position: relative;
   margin-bottom: 20px
+}
+
+.desc h1{
+  margin-bottom: 25px;
+  font-size: 36px;
+  font-weight: 800;
+}
+
+.desc p{
+  margin-bottom: 15px;
 }
 
 .desc ul li{
   text-indent: 0em;
   list-style-position: inside;
+  list-style-type: disc;
 }
 
 .desc ul li ul li{
   text-indent: 2em;
   list-style-position: inside;
+  list-style-type: circle;
 }
 
 /*End information style*/
 
 /*Contact style*/
+.hide{
+  display: none;
+}
+
+.displayContact{
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4);
+  position: fixed;
+  left: 0px;
+  top: 0px;
+}
+
 .form{
   width: 90%;
   margin: auto;
@@ -89,9 +133,16 @@ body{
 }
 
 .contact{
-  width: 100%;
+  width: 30%;
   padding: 4px;
   display: flex;
+
+  margin: 10% auto;
+
+  background: rgba(255, 255, 255, 1);
+
+  -webkit-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.7);
+  box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.7);
 
   justify-content: space-between;
   flex-wrap: wrap
@@ -220,6 +271,10 @@ body{
 
   .desc{
     width: 100%;
+  }
+
+  .contact{
+    width: 70%;
   }
 
   .inputGroup{

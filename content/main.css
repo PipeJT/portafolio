@@ -133,7 +133,7 @@ footer{
 }
 
 .contact{
-  width: 30%;
+  width: 40%;
   padding: 4px;
   display: flex;
 
@@ -185,7 +185,7 @@ footer{
 }
 
 .inputGroup{
-  width: 45%;
+  width: 60%;
   position: relative;
   margin: auto;
   margin-bottom: 12px;
@@ -193,7 +193,7 @@ footer{
 }
 
 .textArea{
-  width: 95%;
+  width: 90%;
   position: relative;
   margin: auto;
   margin-bottom: 12px
@@ -209,9 +209,23 @@ footer{
   text-align: center;
 }
 
+div.close{
+    position: absolute;
+    right: 32%;
+    padding: 0px;
+    text-align: right;
+}
+
+.lnkClose{
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    color: #b0b0b0;
+}
+
 .inputGroup input[type="submit"]{
  /*Tamaños y posiciones*/
-  width: 40%;
+  width: 50%;
   position: relative;
   padding: 8px;
   font-size: 16px;
@@ -257,6 +271,13 @@ footer{
   transition: ease .3s;
 }
 
+@media screen and (max-width: 960px) {
+  .contact{
+    width: 50%;
+  } 
+    .close{right: 28% !important;}
+}
+
 @media screen and (max-width: 720px) {
   .photo{
     width: 100%;
@@ -272,12 +293,15 @@ footer{
   .desc{
     width: 100%;
   }
+    
+    .close{right: 12% !important;}
+    .lnkClose{font-weight: 600;}
 
   .contact{
-    width: 70%;
+    width: 80%;
   }
 
   .inputGroup{
-    width: 95%;
+    width: 90%;
   }
 }
